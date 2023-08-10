@@ -1,5 +1,6 @@
-function mensaje(){
+function mensaje(event){
     alert('Hola!');
+    event.stopPropagation();
 }
 
 document.addEventListener('DOMContentLoaded', function(){
